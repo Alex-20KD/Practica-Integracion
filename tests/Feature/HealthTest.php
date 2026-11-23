@@ -11,6 +11,6 @@ class HealthTest extends TestCase
         $response = $this->getJson('/api/health');
 
         $response->assertOk();
-        $response->assertJson(['status' => 'Gonzalo']);
+        $response->assertJson(['status' => 'ok']);
     }
 }
